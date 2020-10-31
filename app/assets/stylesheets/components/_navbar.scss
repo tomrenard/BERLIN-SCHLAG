@@ -22,7 +22,7 @@
 
 .logo a {
   font-family: 'Arimo', sans-serif;
-  font-size: 7vw;
+  font-size: 5vw;
   font-weight: 800;
   text-decoration: none;
   color: white;
@@ -30,11 +30,32 @@
 
 }
 
-.articles {
-  padding-top: 20vw;
+.articles p {
+  font-family: 'TimesNow', 'Times New Roman', Times, serif;
+  font-size: 8vw;
+  color: #black;
+  text-shadow: 2px 2px 5px rgba(0,0,0,0.2);
+  text-decoration: underline #fe0000;
 }
 
+.articles {
+  position: relative;
+  text-align: left;
+}
+
+// .pic {
+//   filter: blur(8px);
+// }
+
+.title {
+  position: absolute;
+  left: 1vw;
+  right: 1vw;
+  padding-top: 10vw;
+}
 
 .simple_form {
   padding-top: 30vw;
 }
+
+
