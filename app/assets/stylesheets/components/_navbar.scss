@@ -1,12 +1,40 @@
-.navbar-lewagon {
-  justify-content: space-between;
-  background: white;
+.navbar-berlin {
+  display: flex;
+    -webkit-box-orient: horizontal;
+    -webkit-box-direction: normal;
+    flex-flow: row;
+    -webkit-box-pack: justify;
+    justify-content: center;
+    -webkit-box-align: center;
+    align-items: center;
+    position: fixed;
+    top: 1vw;
+    left: 0;
+    width: 100%;
+    z-index: 1;
+}
+.logo-container {
 }
 
-.navbar-lewagon .navbar-collapse {
-  flex-grow: 0;
+.logo {
+  background-color: #fe0000;
 }
 
-.navbar-lewagon .navbar-brand img {
-  width: 40px;
+.logo a {
+  font-family: 'Arimo', sans-serif;
+  font-size: 7vw;
+  font-weight: 800;
+  text-decoration: none;
+  color: white;
+  padding: 1vw 1vw;
+
+}
+
+.articles {
+  padding-top: 20vw;
+}
+
+
+.simple_form {
+  padding-top: 30vw;
 }

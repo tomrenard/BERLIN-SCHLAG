@@ -1,7 +1,13 @@
+<div class='articles'>
+
 <% @articles.each do |article| %>
     <tr>
       <td><%= article.title %></td>
-      <td><%= article.images %></td>
+<!--       <td>
+      <#% @article.photos.each do |photo| %>
+        <#%= cl_image_tag photo.key, height: 300, width: 400, crop: :fill %>
+      <#% end %>
+      </td> -->
       <td><%= link_to 'Show', article_path(article) %></td>
       <td><%= link_to 'Edit', edit_article_path(article) %></td>
       <td><%= link_to 'Destroy', article_path(article),
@@ -10,3 +16,7 @@
     </tr>
   <% end %>
 <td><%= link_to 'New article', new_article_path %></td>
+</div>
+
+
+<img src="app/assets/images/01_SabrinaJeblaoui_NachtClubsBerlin4.jpg" alt="">
