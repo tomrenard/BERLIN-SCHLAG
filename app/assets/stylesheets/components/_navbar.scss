@@ -4,25 +4,28 @@
     -webkit-box-direction: normal;
     flex-flow: row;
     -webkit-box-pack: justify;
-    justify-content: center;
+    justify-content: space-between;
     -webkit-box-align: center;
     align-items: center;
     position: fixed;
-    top: 1vw;
+    top: 2vw;
     left: 0;
     width: 100%;
     z-index: 1;
+    margin: 0vw 2vw;
 }
 .logo-container {
+  background-color: black;
 }
 
 .logo {
-  background-color: #fe0000;
+  background-color: #black;
+  text-shadow: 2px 2px 5px rgba(0,0,0,0.2);
 }
 
 .logo a {
   font-family: 'Arimo', sans-serif;
-  font-size: 5vw;
+  font-size: 3vw;
   font-weight: 800;
   text-decoration: none;
   color: white;
@@ -30,32 +33,39 @@
 
 }
 
-.articles p {
-  font-family: 'TimesNow', 'Times New Roman', Times, serif;
-  font-size: 8vw;
-  color: #black;
-  text-shadow: 2px 2px 5px rgba(0,0,0,0.2);
-  text-decoration: underline #fe0000;
+.social a {
+  padding-right: 3vw;
+  text-decoration: none;
+  color: white;
 }
 
-.articles {
+.dropbtn {
+  color: white;
+  font-size: 16px;
+  border: none;
+  background-color: transparent;
+}
+
+.dropdown {
   position: relative;
-  text-align: left;
+  display: inline-block;
 }
 
-// .pic {
-//   filter: blur(8px);
-// }
-
-.title {
+.dropdown-content {
+  display: none;
   position: absolute;
-  left: 1vw;
-  right: 1vw;
-  padding-top: 10vw;
+  background-color: #black;
+  min-width: 160px;
+  box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+  z-index: 1;
 }
 
-.simple_form {
-  padding-top: 30vw;
+.dropdown-content a {
+  color: black;
+  padding: 12px 16px;
+  text-decoration: none;
+  display: block;
 }
 
+.dropdown:hover .dropdown-content {display: block;}
 

@@ -3,17 +3,20 @@
 <% @articles.each do |article| %>
     <tr>
       <div class='title'>
-      <p><td><%= article.title %></td></p>
+      <span class='ber-title'><%= article.title %></span>
       </div>
       <div class="pic">
-      <td><%= cl_image_tag article.photo.key, height: 1000, width: 1600, crop: :fill %></td>
+      <img class="main-pic"><%= cl_image_tag article.photo.key %></img>
       </div>
-      <td><%= link_to 'Show', article_path(article) %></td>
-      <td><%= link_to 'Edit', edit_article_path(article) %></td>
-      <td><%= link_to 'Destroy', article_path(article),
+<% end %>
+     <!--
+      <td><#%= link_to 'Show', article_path(article) %></td>
+      <td><#%= link_to 'Edit', edit_article_path(article) %></td>
+      <td><#%= link_to 'Destroy', article_path(article),
               method: :delete,
               data: { confirm: 'Are you sure?' } %></td>
     </tr>
-  <% end %>
-<td><%= link_to 'New article', new_article_path %></td>
+  <#% end %>
+<td><#%= link_to 'New article', new_article_path %></td>
 </div>
+ -->
