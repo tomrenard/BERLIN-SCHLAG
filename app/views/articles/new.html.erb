@@ -1,6 +1,9 @@
 <%= simple_form_for @article do |f| %>
   <%= f.input :title %>
-  <%= f.input :text %>
+  <%= f.input :text, :input_html => { :class => 'tinymce' }  %>
+  <%= tinymce %>
   <%= f.input :photo, as: :file %>
   <%= f.button :submit %>
 <% end %>
+
+
