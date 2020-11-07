@@ -10,7 +10,8 @@
     <div class='page-content'>
       <p><%= @article.text.html_safe %></p>
     </div>
-    <p><%= link_to 'Destroy', @article,
+<p><%= link_to 'Destroy', @article,
               method: :delete,
               data: { confirm: 'Are you sure?' } %></p>
+<p><%= link_to 'Edit', edit_article_path(@article) %></p>
 </div>
