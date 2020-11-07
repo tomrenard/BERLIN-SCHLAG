@@ -1,15 +1,15 @@
 <div class="page-container">
+  <div class="article-header">
   <div class="pic">
     <img class="main-pic"><%= cl_image_tag @article.photo.key %></img>
   </div>
-  <div class="page-article">
     <div class='page-title'>
       <h1><%= @article.title %></h1>
+    </div>
     </div>
     <div class='page-content'>
       <p><%= @article.text.html_safe %></p>
     </div>
-  </div>
     <p><%= link_to 'Destroy', @article,
               method: :delete,
               data: { confirm: 'Are you sure?' } %></p>
