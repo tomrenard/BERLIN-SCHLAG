@@ -3,10 +3,11 @@
   <div class="dropdown">
   <button class="dropbtn"><i class="fas fa-grip-lines"></i></button>
   <div class="dropdown-content">
-    <%= link_to "Login", new_user_session_path %>
-    <%= link_to "Sign Up", new_user_registration_path %>
+    <% if user_signed_in? %>
     <%= link_to "Logout", destroy_user_session_path, method: :delete, class: "underline" %>
-    <a href="#">About us</a>
+    <% else %>
+    <%= link_to "Login (Gros Shlag Only)", new_user_session_path %>
+    <% end %>
   </div>
 </div>
   <div class="logo-container">
