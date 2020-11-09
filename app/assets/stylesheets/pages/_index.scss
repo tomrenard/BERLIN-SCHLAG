@@ -4,10 +4,8 @@
 
 .ber-title {
   font-family: 'TimesNow', 'Times New Roman', Times, serif;
-  font-size: 8vw;
-  color: white;
-  text-shadow: 2px 2px 5px rgba(0,0,0,0.2);
-  background-color: #fe0000;
+  font-size: 4vw;
+  color: black;
   line-height: 1.15;
 }
 
@@ -15,8 +13,20 @@
   text-decoration: none;
 }
 
+.title a:hover {
+  text-decoration: underline black;
+}
+
+.pic-home {
+  order: 1;
+  flex: 1;
+}
+
 .articles {
-  position: relative;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  // position: relative;
   text-align: left;
   align-items: center;
   justify-content: center;
@@ -25,7 +35,9 @@
 }
 
 .title {
-  position: absolute;
+  order: 2;
+  flex: 1;
+  // position: absolute;
   left: 1vw;
   right: 1vw;
   padding-top: 15vw;

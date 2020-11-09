@@ -3,4 +3,11 @@
 <div class='mediagroup'>
 <h4>BerlinSchlag, all rights reserved/2020</h4>
 </div>
+<div class="login">
+   <% if user_signed_in? %>
+    <%= link_to "Logout", destroy_user_session_path, method: :delete, class: "underline" %>
+    <% else %>
+    <%= link_to "Login (Gros Shlag Only)", new_user_session_path %>
+    <% end %>
+</div>
 </footer>

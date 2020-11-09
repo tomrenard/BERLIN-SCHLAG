@@ -1,15 +1,8 @@
 <div class="header-ber">
 <div class="navbar-berlin">
-  <div class="dropdown">
-  <button class="dropbtn"><i class="fas fa-grip-lines"></i></button>
-  <div class="dropdown-content">
-    <% if user_signed_in? %>
-    <%= link_to "Logout", destroy_user_session_path, method: :delete, class: "underline" %>
-    <% else %>
-    <%= link_to "Login (Gros Shlag Only)", new_user_session_path %>
-    <% end %>
+  <div class="tagline">
+    <p>Open-mindedness source</p>
   </div>
-</div>
   <div class="logo-container">
     <div class="logo">
   <a href="/">BerlinSchlag</a>
