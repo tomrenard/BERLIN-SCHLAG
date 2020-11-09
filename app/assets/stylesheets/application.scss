@@ -25,3 +25,18 @@ body {
   color: #0E0000;
   text-align: left;
 }
+
+body{
+ width: 100%;
+ min-height: 100vh;
+ display: flex;
+ flex-direction: column;
+}
+
+.lol{
+flex-grow: 1;
+}
+
+footer{
+flex-grow: 0;
+}
