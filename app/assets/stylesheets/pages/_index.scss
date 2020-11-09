@@ -21,13 +21,16 @@
   align-items: center;
   justify-content: center;
   line-height: 0;
+  min-height: 100%;
 }
 
 .title {
   position: absolute;
-  left: 1vw;
-  right: 1vw;
-  padding-top: 15vw;
+  top: 25%;
+  margin: 1vw 1vw;
+  // left: 50%;
+  // transform: translate(-50%, -50%);
+  z-index: 1;
 }
 
 .pic img {
@@ -36,4 +39,14 @@
   background-position: center;
   background-repeat: no-repeat;
   background-size: cover;
+}
+
+.pic-home img {
+  width: 100%;
+  height: auto;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  -webkit-filter: grayscale(100%);
+  filter: grayscale(100%);
 }

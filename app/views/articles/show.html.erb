@@ -8,10 +8,16 @@
     </div>
     </div>
     <div class='page-content'>
+      <span>By <%= @article.author %> | <%= @article.date.strftime("%d %B %Y") %></span>
       <p><%= @article.text.html_safe %></p>
     </div>
-<p><%= link_to 'Destroy', @article,
+    <% if user_signed_in? %>
+  <p><%= link_to 'Destroy', @article,
               method: :delete,
               data: { confirm: 'Are you sure?' } %></p>
 <p><%= link_to 'Edit', edit_article_path(@article) %></p>
+  </div>
+  <% else %>
+   <% end %>
+
 </div>

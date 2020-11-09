@@ -3,9 +3,10 @@
   <div class="dropdown">
   <button class="dropbtn"><i class="fas fa-grip-lines"></i></button>
   <div class="dropdown-content">
-    <a href="#">Link 1</a>
-    <a href="#">Link 2</a>
-    <a href="#">Link 3</a>
+    <%= link_to "Login", new_user_session_path %>
+    <%= link_to "Sign Up", new_user_registration_path %>
+    <%= link_to "Logout", destroy_user_session_path, method: :delete, class: "underline" %>
+    <a href="#">About us</a>
   </div>
 </div>
   <div class="logo-container">
@@ -14,9 +15,16 @@
     </div>
      <div class="progress-bar" id="myBar"></div>
   </div>
-
+  <% if user_signed_in? %>
   <div class="social">
-    <%= link_to 'New article', new_article_path %>
+    <%= link_to new_article_path do %>
+      <i class="fas fa-plus"></i>
+     <% end %>
   </div>
+  <% else %>
+   <div class="social">
+    <a href='/'>Logo</a>
+  </div>
+   <% end %>
 </div>
 </div>
