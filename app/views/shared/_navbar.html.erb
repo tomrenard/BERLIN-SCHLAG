@@ -1,24 +1,18 @@
 <div class="header-ber">
 <div class="navbar-berlin">
-  <div class="tagline">
-    <p>Open-mindedness source</p>
-  </div>
+
   <div class="logo-container">
+    <div class="dropdown">
+      <i class="fas fa-bars"></i>
+    </div>
     <div class="logo">
   <a href="/">BerlinSchlag</a>
     </div>
-     <div class="progress-bar" id="myBar"></div>
+     <div class="search">
+       <i class="fas fa-search"></i>
+     </div>
+<div class="progress-bar" id="myBar"></div>
   </div>
-  <% if user_signed_in? %>
-  <div class="social">
-    <%= link_to new_article_path do %>
-      <i class="fas fa-plus"></i>
-     <% end %>
-  </div>
-  <% else %>
-   <div class="social">
-    <a href='/'>Logo</a>
-  </div>
-   <% end %>
+
 </div>
 </div>

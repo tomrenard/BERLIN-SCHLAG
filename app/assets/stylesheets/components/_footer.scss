@@ -1,19 +1,40 @@
 .ber-footer {
   background-color: #121212;
   display: flex;
-  justify-content: center;
+  justify-content: space-between;
   align-items: center;
   height: 5vw;
+  padding: 0 1vw;
 }
 
 .ber-footer p {
-  font-family: 'Roboto', sans-serif;
+  font-family: 'Cormorant Garamond', serif;
   color: white;
 }
 
 .ber-footer h4 {
   color: white;
-  font-family: 'Arimo', sans-serif;
+  font-family: 'Cormorant Garamond', serif;
   font-size: 1vw;
-  font-weight: 800;
+}
+
+.login button {
+  font-family: 'Cormorant Garamond', serif;
+  color: white;
+  border: none;
+    font-size: 13px;
+    display: inline-block;
+    border-radius: 35px;
+    padding: 0.3em 1em 0.3em;
+    background-color: #121212;
+    margin-right: 10px;
+    margin-bottom: 15px;
+    text-align: center;
+    cursor: pointer;
+}
+
+.left-footer p {
+  color: white;
+  font-family: 'Cormorant Garamond', serif;
+  font-size: 1vw;
 }
