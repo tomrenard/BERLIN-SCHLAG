@@ -1,29 +1,25 @@
 <footer class="ber-footer">
   <div class="left-footer">
-<% if user_signed_in? %>
-  <div class="social">
-    <%= link_to new_article_path do %>
-      <p>Add Article</p>
-     <% end %>
+      <% if user_signed_in? %>
+        <%= link_to new_article_path do %>
+          <p>Add Article</p>
+        <% end %>
+      <% else %>
+          <a id="email" href="mailto:hello@berlinschlag.com" target="_blank">hello(at)berlinschlag.com</a>
+      <% end %>
   </div>
-  <% else %>
-   <div class="social">
-    <a href='/'>Logo</a>
+  <div class='mediagroup'>
+    <h4>All rights reserved - BerlinSchlag - 2k20</h4>
   </div>
-   <% end %>
-   </div>
-<div class='mediagroup'>
-<h4>BerlinSchlag - all rights reserved - 2020</h4>
-</div>
-<div class="login">
-   <% if user_signed_in? %>
-    <%= link_to destroy_user_session_path, method: :delete, class: "underline" do %>
-    <button>Logout</button>
-    <% end %>
+  <div class="login">
+    <% if user_signed_in? %>
+      <%= link_to destroy_user_session_path, method: :delete, class: "underline" do %>
+        <button>Logout</button>
+      <% end %>
     <% else %>
-    <%= link_to new_user_session_path do %>
-      <button>Login</button>
+      <%= link_to new_user_session_path do %>
+        <button>Login</button>
+      <% end %>
     <% end %>
-    <% end %>
-</div>
+  </div>
 </footer>
