@@ -24,9 +24,10 @@
   justify-content: space-between;
   padding: 0.5vw 1vw;
   position: fixed;
+  box-shadow: 0px 6px 8px rgba(0,0,0,0.4);
 }
+
 .logo {
-  // background-color: #black;
   text-shadow: 2px 2px 20px rgba(0,0,0,0.2);
   order: 2;
   z-index: 3;
@@ -36,9 +37,10 @@
   order: 1;
   color: white;
   z-index: 3;
-  font-size: 1.5vw;
+  font-size: 1.7vw;
   position: relative;
   display: inline-block;
+  font-weight: lighter;
 }
 
 .dropdown-content {
@@ -69,53 +71,32 @@
 .search {
   order: 3;
   color: white;
-  transition: all .5s ease-in-out;
   z-index: 3;
-  font-size: 1.5vw;
+  font-size: 1.7vw;
+  font-weight: 100;
+  padding-top: 4px;
 }
 
-.search i:hover {
-  transform: scale(1.2);
+.search ion-icon:hover {
+  opacity: 0.7;
 }
 
 .dropdown {
-  transition: all .5s ease-in-out;
+  padding-top: 4px;
 }
 
-.dropdown i:hover {
+.dropdown ion-icon:hover {
   transform: scale(1.2);
 }
 
 .logo a {
   font-family: 'Roboto', sans-serif;
-  font-size: 3vw;
+  font-size: 3.5vw;
   font-weight: 900;
   text-decoration: none;
   color: white;
-  padding: 1vw 3vw;
-
-}
-
-.social {
-  margin-right: auto;
-  margin-left: auto;
-}
-
-.tagline {
-  margin-left: auto;
-  margin-right: auto;
-}
-
-.social a {
-  text-decoration: none;
-  color: black;
-  font-size: 20px;
-}
-
-.tagline p {
-  font-family: 'Cormorant Garamond', serif;
-  font-style: italic;
-  font-size: 1.5vw;
+  padding: 1vw 5vw;
+  letter-spacing: -0.05em;
 }
 
 .progress-bar {

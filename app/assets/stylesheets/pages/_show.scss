@@ -57,6 +57,25 @@
   margin-right: auto;
 }
 
+.search-form-control {
+  position: absolute;
+  top: 4.5vw;
+}
+
+.search-form-control .btn {
+  position: absolute;
+  top: 8px;
+}
+
+.search-form-control .form-control {
+  height: 3vw;
+  border: none;
+}
+
+.search-form-control .form-control:focus {
+  outline: none !important;
+}
+
 .credits {
   position: absolute;
   bottom: 1vw;

@@ -2,18 +2,29 @@
   <div class="navbar-berlin">
     <div class="logo-container">
       <div class="dropdown">
-        <i class="fas fa-bars"></i>
-        <div class="dropdown-content">
+        <ion-icon name="menu-outline"></ion-icon>
+      <!--   <div class="dropdown-content">
           <a href="mailto:hello@berlinschlag.com" target="_blank">hello(at)berlinschlag.com</a>
-        </div>
+        </div> -->
       </div>
       <div class="logo">
         <a href="/">BerlinSchlag</a>
       </div>
       <div class="search">
-       <i class="fas fa-search"></i>
-     </div>
-     <div class="progress-bar" id="myBar"></div>
-   </div>
- </div>
-</div>
+        <ion-icon name="search-outline"></ion-icon>
+      </div>
+      <div class="progress-bar" id="myBar"></div>
+    </div>
+    <div class="search-bar">
+      <div class="search-form-control">
+        <%= form_tag articles_path, id: "home-page-search", method: :get do %>
+          <%= text_field_tag :query_word,
+          params[:query_word],
+          class: "form-control",
+          placeholder: "Search" %>
+        <% end %>
+          <button type="submit" form="home-page-search" class="btn home-btn"></button>
+        </div>
+      </div>
+    </div>
+  </div>
