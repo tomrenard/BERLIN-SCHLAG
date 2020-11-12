@@ -42,3 +42,15 @@ function myFunction() {
   var scrolled = (winScroll / height) * 100;
   document.getElementById("myBar").style.width = scrolled + "%";
 }
+
+const search_icon = document.querySelector('#search-icon');
+
+function dropdownFunction() {
+  const search_form = document.querySelector('.search-form-control');
+  search_form.classList.toggle('active');
+}
+
+search_icon.addEventListener("click", dropdownFunction);
+
+
+

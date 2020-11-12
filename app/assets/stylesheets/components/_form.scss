@@ -14,3 +14,30 @@
   color: white;
   background-color: #121212;
 }
+
+.search-form-control {
+  display: none;
+  position: absolute;
+  width: 100%;
+  top: 100%;
+  right: 0;
+  box-shadow: 0px 6px 8px rgba(0,0,0,0.4);
+}
+
+.active {
+  display: block;
+}
+
+.search-form-control .btn {
+  position: absolute;
+  top: 8px;
+}
+
+.search-form-control .form-control {
+  height: 3vw;
+  border: none;
+}
+
+.search-form-control .form-control:focus {
+  outline: none !important;
+}
