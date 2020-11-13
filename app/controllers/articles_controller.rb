@@ -1,6 +1,15 @@
 class ArticlesController < ApplicationController
   def index
-    @articles = Article.all.order('created_at DESC')
+    if params[:query].present?
+      sql_query = " \
+        articles.title @@ :query \
+        OR articles.text @@ :query \
+        OR articles.author @@ :query \
+      "
+      @articles = Article.where(sql_query, query: "%#{params[:query]}%")
+    else
+      @articles = Article.all.order('created_at DESC')
+    end
   end
 
   def edit

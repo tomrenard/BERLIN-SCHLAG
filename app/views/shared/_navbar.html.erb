@@ -15,12 +15,14 @@
       </div>
       <div class="progress-bar" id="myBar"></div>
       <div class="search-form-control">
-        <%= form_tag articles_path, id: "home-page-search", method: :get do %>
-          <%= text_field_tag :query_word,
-          params[:query_word],
-          class: "form-control",
-          placeholder: "Search" %>
-        <% end %>
+        <%= form_tag articles_path, method: :get do %>
+          <%= text_field_tag :query,
+            params[:query],
+            class: "form-control",
+            placeholder: ">"
+          %>
+        <%= submit_tag "Search", class: "btn btn-primary submit-btn"%>
+      <% end %>
           <button type="submit" form="home-page-search" class="btn home-btn"></button>
         </div>
         </div>

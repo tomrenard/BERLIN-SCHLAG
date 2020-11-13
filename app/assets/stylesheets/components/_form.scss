@@ -7,7 +7,7 @@
   width: 100%;
   height: calc(1.5em + 0.75rem + 2px);
   padding: 0.375rem 0.75rem;
-  font-family: 'Roboto', serif;
+  font-family: 'Roboto', serif !important;
   font-size: 1rem;
   font-weight: 400;
   line-height: 1.5;
@@ -17,11 +17,16 @@
 
 .search-form-control {
   display: none;
+  font-family: 'Roboto', serif;
   position: absolute;
   width: 100%;
   top: 100%;
   right: 0;
   box-shadow: 0px 6px 8px rgba(0,0,0,0.4);
+}
+
+.search-form-control input {
+  font-family: 'Roboto', serif;
 }
 
 .active {
@@ -33,11 +38,35 @@
   top: 8px;
 }
 
+#query {
+  font-family: 'Roboto', serif;
+}
 .search-form-control .form-control {
   height: 3vw;
   border: none;
+  font-family: 'Roboto', serif;
+}
+
+.search-form-control .form-control:input-placeholder {
+  font-family: 'Roboto', serif;
 }
 
 .search-form-control .form-control:focus {
   outline: none !important;
+  background-color: #121212;
+  font-family: 'Roboto', serif;
+}
+
+.submit-btn {
+  display: none;
+}
+
+::-webkit-input-placeholder { /* Chrome/Opera/Safari */
+  font-family: 'Roboto', serif;
+  color: white;
+}
+
+::placeholder {
+  font-family: 'Roboto', serif;
+  color: white;
 }
