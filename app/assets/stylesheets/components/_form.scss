@@ -31,6 +31,7 @@
 
 .active {
   display: block;
+  transition: all 0.5s ease-out;
 }
 
 .search-form-control .btn {
