@@ -10,10 +10,12 @@ class ArticlesController < ApplicationController
     else
       @articles = Article.all.order('created_at DESC')
     end
+    @display_footer = false
   end
 
   def edit
     @article = Article.find(params[:id])
+    @display_footer = false
   end
 
   def update
@@ -23,15 +25,18 @@ class ArticlesController < ApplicationController
     else
       render 'edit'
     end
+    @display_footer = false
   end
 
   def show
     @article = Article.find(params[:id])
     @user = @article.user
+    @display_footer = true
   end
 
   def new
     @article = Article.new
+    @display_footer = false
   end
 
   def create
@@ -42,12 +47,14 @@ class ArticlesController < ApplicationController
     else
       render 'new'
     end
+    @display_footer = false
   end
 
   def destroy
     @article = Article.find(params[:id])
     @article.destroy
     redirect_to articles_path
+    @display_footer = false
   end
 
   private

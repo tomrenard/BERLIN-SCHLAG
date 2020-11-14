@@ -25,6 +25,10 @@ require("channels")
 
 // External imports
 import "bootstrap";
+import { initScrollBar } from '../components/scroll_bar';
+import { initSearchDropdown } from '../components/search_dropdown';
+import { initInfiniteScroll } from '../components/infinite_scroll';
+
 
 // Internal imports, e.g:
 // import { initSelect2 } from '../components/init_select2';
@@ -32,25 +36,10 @@ import "bootstrap";
 document.addEventListener('turbolinks:load', () => {
   // Call your functions here, e.g:
   // initSelect2();
+  initScrollBar();
+  initSearchDropdown();
+  initInfiniteScroll();
 });
-
-window.onscroll = function() {myFunction()};
-
-function myFunction() {
-  var winScroll = document.body.scrollTop || document.documentElement.scrollTop;
-  var height = document.documentElement.scrollHeight - document.documentElement.clientHeight;
-  var scrolled = (winScroll / height) * 100;
-  document.getElementById("myBar").style.width = scrolled + "%";
-}
-
-const search_icon = document.querySelector('#search-icon');
-
-function dropdownFunction() {
-  const search_form = document.querySelector('.search-form-control');
-  search_form.classList.toggle('active');
-}
-
-search_icon.addEventListener("click", dropdownFunction);
 
 
 
