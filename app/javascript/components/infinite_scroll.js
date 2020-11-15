@@ -1,7 +1,6 @@
 const initInfiniteScroll = () => {
   function infiniteMove() {
     const p = window.location.pathname;
-    console.log(p);
     const winheight = window.innerHeight;
     const winoffset = window.pageYOffset;
     const scrollH = document.body.scrollHeight;
