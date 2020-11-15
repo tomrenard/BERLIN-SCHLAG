@@ -12,24 +12,27 @@
 
 .ber-footer p {
   font-family: 'Roboto', sans-serif;
-  color: white;
-  font-size: 1.5vw;
+  text-transform: uppercase;
+  font-size: 0.625rem;
+  color: #555;
   font-weight: 100;
 }
 
 .ber-footer h4 {
-  color: white;
+  color: #555;
+  text-transform: uppercase;
+  font-size: 0.625rem;
   font-family: 'Roboto', sans-serif;
-  font-size: 1.5vw;
   font-weight: 100;
   order: 2;
 }
 
 .login button {
   font-family: 'Roboto', sans-serif;
-  color: white;
+  color: #555;
   border: none;
-  font-size: 1.5vw;
+  text-transform: uppercase;
+  font-size: 0.625rem;
   display: inline-block;
   background-color: #121212;
   text-align: center;
@@ -39,18 +42,20 @@
 }
 
 .left-footer a {
-  color: white;
+  color: #555;
   font-family: 'Roboto', sans-serif;
-  font-size: 1.5vw;
+  text-transform: uppercase;
+  font-size: 0.625rem;
   order: 1;
   margin: 0 0;
   text-decoration: none;
 }
 
 .left-footer p {
-  color: white;
+  color: #555;
   font-family: 'Roboto', sans-serif;
-  font-size: 1.5vw;
+  text-transform: uppercase;
+  font-size: 0.625rem;
   order: 1;
   margin: 0 0;
   text-decoration: none;

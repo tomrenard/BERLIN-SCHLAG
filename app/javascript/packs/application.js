@@ -28,7 +28,8 @@ import "bootstrap";
 import { initScrollBar } from '../components/scroll_bar';
 import { initSearchDropdown } from '../components/search_dropdown';
 import { initInfiniteScroll } from '../components/infinite_scroll';
-
+import { initScrollRotate } from '../components/scroll_rotate';
+import { initLogoDrawing } from '../components/logo_drawing';
 
 // Internal imports, e.g:
 // import { initSelect2 } from '../components/init_select2';
@@ -39,6 +40,8 @@ document.addEventListener('turbolinks:load', () => {
   initScrollBar();
   initSearchDropdown();
   initInfiniteScroll();
+  initScrollRotate();
+  initLogoDrawing();
 });
 
 

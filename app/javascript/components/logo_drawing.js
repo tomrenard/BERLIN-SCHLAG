@@ -1,0 +1,3 @@
+const initLogoDrawing = () => {
+}
+export { initLogoDrawing }

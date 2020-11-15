@@ -10,7 +10,7 @@ class ArticlesController < ApplicationController
     else
       @articles = Article.all.order('created_at DESC')
     end
-    @display_footer = false
+    @display_footer = true
   end
 
   def edit

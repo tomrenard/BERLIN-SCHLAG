@@ -42,11 +42,13 @@
 .search-form-control .btn {
   position: absolute;
   top: 8px;
-}
-
-#query {
   font-family: 'Roboto', serif;
 }
+
+.search-form-control .placeholder {
+  font-family: 'Roboto', serif;
+}
+
 .search-form-control .form-control {
   height: 3vw;
   border: none;
@@ -65,14 +67,4 @@
 
 .submit-btn {
   display: none;
-}
-
-::-webkit-input-placeholder { /* Chrome/Opera/Safari */
-  font-family: 'Roboto', serif;
-  color: white;
-}
-
-::placeholder {
-  font-family: 'Roboto', serif;
-  color: white;
 }
