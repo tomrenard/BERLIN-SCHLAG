@@ -1,8 +1,10 @@
 .header-ber {
   position: relative;
+  font-family: 'Roboto' sans-serif !important;
 }
 
 .navbar-berlin {
+  font-family: 'Roboto' sans-serif !important;
   display: flex;
     -webkit-box-orient: horizontal;
     -webkit-box-direction: normal;
@@ -110,4 +112,21 @@
   left: 0;
   bottom: 0;
   z-index: 2;
+}
+
+
+@media (max-width: 600px) {
+
+  .logo a {
+  font-size: 5vw;
+  }
+
+  .dropdown {
+  font-size: 3vw;
+  }
+
+  .search {
+    font-size: 3vw;
+  }
+
 }

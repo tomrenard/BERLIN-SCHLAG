@@ -16,6 +16,7 @@
 }
 
 .search-form-control {
+  opacity: 0;
   display: block;
   font-family: 'Roboto', serif;
   position: absolute;
@@ -29,42 +30,56 @@
   transition: all 1s ease;
 }
 
-.search-form-control input {
-  font-family: 'Roboto', serif;
-}
-
 .active {
   top: 100%;
   right: 0;
   box-shadow: 0px 6px 8px rgba(0,0,0,0.4);
 }
 
+input#query.form-control {
+  color: white;
+  font-family: 'Roboto', sans-serif !important;
+}
+
+input[type='text'] {
+  font-family: 'Roboto', sans-serif;
+}
+
+input#query.form-control::placeholder {
+  color: #555;
+  text-transform: uppercase;
+  font-family: 'Roboto', sans-serif;
+}
+
 .search-form-control .btn {
   position: absolute;
   top: 8px;
-  font-family: 'Roboto', serif;
-}
-
-.search-form-control .placeholder {
-  font-family: 'Roboto', serif;
 }
 
 .search-form-control .form-control {
   height: 3vw;
   border: none;
-  font-family: 'Roboto', serif;
 }
 
-.search-form-control .form-control:input-placeholder {
-  font-family: 'Roboto', serif;
-}
+
 
 .search-form-control .form-control:focus {
   outline: none !important;
   background-color: #121212;
-  font-family: 'Roboto', serif;
 }
 
 .submit-btn {
   display: none;
+}
+
+.opacity {
+  opacity: 1;
+}
+
+@media (max-width: 600px) {
+
+  input#query.form-control::placeholder {
+  font-size: 2vw !important;
+  }
+
 }

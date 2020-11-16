@@ -7,7 +7,7 @@ const initScrollBar = () => {
     var scrolled = (winScroll / height) * 100;
     document.getElementById("myBar").style.width = scrolled + "%";
     sharp.style.transform = "rotate(" + window.pageYOffset/2 + "deg)";
-    sharp.style.color = "white"
+    sharp.style.color = "white";
     if (window.pageYOffset === 0)
       sharp.style.color = "#fe0000";
   }
