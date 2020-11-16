@@ -1,0 +1,5 @@
+meta_product_name: "Berlin Schlag"
+meta_title: "Berlin Schlag - Constant open-mindedness"
+meta_description: "Berlin Schlag is a web magazine which offers a relevant and impactful eye across nowadays cultural subjects."
+meta_image: "logo-w.png" # should exist in `app/assets/images/`
+# twitter_account: "@product_twitter_account"   # required for Twitter Cards

@@ -3,4 +3,8 @@ class ApplicationController < ActionController::Base
   def footer_action
     @display_footer = true
   end
+
+  def default_url_options
+    { host: ENV["DOMAIN"] || "localhost:3000" }
+  end
 end
